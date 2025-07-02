@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @theme {
-  --font-monserrat: "montserrat", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
   --animate-fadeIn: fadeIn 0.3s ease-in-out;
 
   @keyframes fadeIn{
@@ -15,11 +16,12 @@
   }
 }
 
-@font-face{
+/* @font-face{
   font-family: 'Montserrat';
-  src: url("/assets/fonts/Montserrat/Montserrat-Medium")
-    format("truetype");
-}
+  src: url("./assets/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+} */
 
  @plugin "daisyui" {
    themes: night --default, dark --prefersdark;
